@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mubashir Ehsan | Software Engineer</title>
+
+    <meta name="description"
+        content="Portfolio of Mubashir Ehsan - FAST NUCES Computer Science Student building Software Systems and AI.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Temporary inline override to ensure project headings get extra spacing immediately -->
+    <style>
+        .projects-carousel .project-card-head{
+            padding-top:40px !important;
+            padding-left:28px !important;
+            padding-right:28px !important;
+            padding-bottom:18px !important;
+        }
+        .projects-carousel .project-card-head h2{
+            margin-top:12px !important;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+
+            ME
+
+        </div>
+
+        <ul>
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#skills">Skills</a></li>
+
+            <li><a href="#experience">Experience</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+        <a href="#" class="resume-btn">
+
+            Resume
+
+        </a>
+
+    </nav>
+
+    <!-- Hero -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-left">
+
+            <div class="terminal">
+
+                <div class="terminal-top">
+
+                    <span class="red"></span>
+                    <span class="yellow"></span>
+                    <span class="green"></span>
+
+                </div>
+
+                <div class="terminal-body" id="terminalBody">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right">
+
+            <h1>
+
+                Mubashir
+
+                <span>Ehsan</span>
+
+            </h1>
+
+            <h2>
+
+                BS Computer Science Student
+
+            </h2>
+
+            <p>
+
+                First-year BS Computer Science student at FAST NUCES Lahore,
+                focused on C++ and OOP systems work while building toward software internships.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn green">
+
+                    View Projects
+
+                </a>
+
+                <a href="#" class="btn outline">
+
+                    GitHub
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- About -->
+
+    <section class="about">
+
+        <div class="section-title">
+
+            <span>$</span>
+
+            cat about.txt
+
+        </div>
+
+        <div class="about-card">
+
+            <div class="about-row">
+
+                <strong>Name</strong>
+
+                <span>Mubashir Ehsan</span>
+
+            </div>
+
+            <div class="about-row">
+
+                <strong>University</strong>
+
+                <span>FAST NUCES Lahore</span>
+
+            </div>
+
+            <div class="about-row">
+
+                <strong>Degree</strong>
+
+                <span>BS Computer Science (2029)</span>
+
+            </div>
+
+            <div class="about-row">
+
+                <strong>Focus</strong>
+
+                <span>
+
+                    Software Engineering • AI • Systems Programming
+
+                </span>
+
+            </div>
+
+            <div class="about-row">
+
+                <strong>Current Goal</strong>
+
+                <span>
+
+                    Becoming an AI Engineer while mastering Software Engineering fundamentals.
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+
+    <section id="projects">
+
+        <div class="section-title">
+
+            <span>$</span>
+
+            ls projects/
+
+        </div>
+
+        <div class="projects-carousel-shell">
+
+            <div class="projects-carousel-hint">
+
+                Scroll left or right to rotate projects.
+
+            </div>
+
+            <div class="projects-carousel" aria-label="Projects carousel">
+
+            <!-- Repo URL placeholders:
+                 REPO_URL_INTERNSHIP_PROJECTS
+                 REPO_URL_INTERNSHIP_CHATBOT
+                 REPO_URL_INTERNSHIP_CLASSIFICATION
+                 REPO_URL_INTERNSHIP_RECOMMENDER
+                 REPO_URL_HOSPITAL_MANAGEMENT_SYSTEM
+                 REPO_URL_LOGIC_DESIGN_PROJECTS
+                 REPO_URL_TERMINAL_ARCADE
+                 REPO_URL_COMPANY_MANAGEMENT
+            -->
+
+                <div class="project-card internship-card">
+
+                <div class="project-image">
+
+                    <pre class="project-preview">$ tree internship-projects/
+├── chatbot
+├── classification
+└── recommender</pre>
+
+                </div>
+
+                <div class="project-card-head">
+
+                    <h2>
+
+                        Internship Projects
+
+                    </h2>
+
+                    <p>
+
+                        Internship work grouped into three focused builds.
+
+                    </p>
+
+                </div>
+
+                <div class="tags">
+
+                    <span>DecodeLabs</span>
+                    <span>Python</span>
+                    <span>AI Workflows</span>
+
+                </div>
+
+                <div class="buttons">
+
+                    <button class="project-toggle" type="button" aria-expanded="false" aria-controls="internship-subprojects">
+
+                        Projects
+
+                    </button>
+
+                </div>
+
+                <div class="project-subprojects" id="internship-subprojects">
+
+                    <article class="subproject">
+
+                        <div class="subproject-meta">
+
+                            <h3>
+
+                                Rule-Based AI Chatbot
+
+                            </h3>
+
+                            <span>
+
+                                Internship project 1
+
+                            </span>
+
+                        </div>
+
+                        <p>
+
+                            Conversational assistant workflow built during the internship.
+
+                        </p>
+
+                        <a href="https://github.com/mubashirehsan10-bit/Internship-Projects/tree/main/Project_1_Chatbot">
+
+                            Repo
+
+                        </a>
+
+                    </article>
+
+                    <article class="subproject">
+
+                        <div class="subproject-meta">
+
+                            <h3>
+
+                                Data Classification Using AI
+
+                            </h3>
+
+                            <span>
+
+                                Internship project 2
+
+                            </span>
+
+                        </div>
+
+                        <p>
+
+                            Classification pipeline focused on structured prediction tasks.
+
+                        </p>
+
+                        <a href="https://github.com/mubashirehsan10-bit/Internship-Projects/tree/main/Project_2_Classification">
+
+                            Repo
+
+                        </a>
+
+                    </article>
+
+                    <article class="subproject">
+
+                        <div class="subproject-meta">
+
+                            <h3>
+
+                                AI Recommendation Logic
+
+                            </h3>
+
+                            <span>
+
+                                Internship project 3
+
+                            </span>
+
+                        </div>
+
+                        <p>
+
+                            Recommendation system work centered on ranking and personalization.
+
+                        </p>
+
+                        <a href="https://github.com/mubashirehsan10-bit/Internship-Projects/tree/main/Project_3_Recommender">
+
+                            Repo
+
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
+                <div class="project-image">
+
+                    <pre class="project-preview">$ ./hospital-manager
+Hospital management system
+C++ | SFML | OOP</pre>
+
+                </div>
+
+                <h2>
+
+                    Hospital Management System
+
+                </h2>
+
+                <p>
+
+                    C++ and SFML hospital management system with object-oriented design.
+
+                </p>
+
+                <div class="tags">
+
+                    <span>C++</span>
+                    <span>SFML</span>
+                    <span>OOP</span>
+
+                </div>
+
+                <div class="buttons">
+
+                    <a class="project-link" href="https://github.com/mubashirehsan10-bit/Hospital_Management_System">
+
+                        GitHub
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
+                <div class="project-image">
+
+                    <pre class="project-preview">$ cd logic-design
+Digital logic exercises
+Designing circuits and lab work</pre>
+
+                </div>
+
+                <h2>
+
+                    Logic Design Projects
+
+                </h2>
+
+                <p>
+
+                    Coursework and practice focused on digital logic, circuits and lab exercises.
+
+                </p>
+
+                <div class="tags">
+
+                    <span>Digital Logic</span>
+                    <span>Circuits</span>
+                    <span>Lab Work</span>
+
+                </div>
+
+                <div class="buttons">
+
+                    <a class="project-link" href="https://github.com/mubashirehsan10-bit/Logic_design_projects">
+
+                        GitHub
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
+                <div class="project-image">
+
+                    <pre class="project-preview">$ run terminal-arcade
+Terminal themed game
+CLI style interface and gameplay</pre>
+
+                </div>
+
+                <h2>
+
+                    Terminal Arcade
+
+                </h2>
+
+                <p>
+
+                    Terminal-style arcade project with a command line inspired interface.
+
+                </p>
+
+                <div class="tags">
+
+                    <span>C++</span>
+                    <span>CLI</span>
+                    <span>Game Logic</span>
+
+                </div>
+
+                <div class="buttons">
+
+                    <a class="project-link" href="https://github.com/mubashirehsan10-bit/terminal-arcade">
+
+                        GitHub
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
+                <div class="project-image">
+
+                    <pre class="project-preview">$ ./company-management
+Singleton | Rule of Three
+Dynamic memory management</pre>
+
+                </div>
+
+                <h2>
+
+                    Company Management System
+
+                </h2>
+
+                <p>
+
+                    C++ application implementing Singleton, Rule of Three and dynamic memory management.
+
+                </p>
+
+                <div class="tags">
+
+                    <span>C++</span>
+                    <span>OOP</span>
+                    <span>Design Patterns</span>
+
+                </div>
+
+                <div class="buttons">
+
+                    <a class="project-link" href="https://github.com/mubashirehsan10-bit/Company-Management">
+
+                        GitHub
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            </div>
+
+            <div class="projects-carousel-controls">
+
+                <button class="carousel-btn" type="button" data-carousel-prev aria-label="Previous project">
+
+                    ←
+
+                </button>
+
+                <div class="carousel-counter" aria-live="polite">
+
+                    <span id="projectCurrent">01</span>
+
+                    <span>/</span>
+
+                    <span id="projectTotal">05</span>
+
+                </div>
+
+                <button class="carousel-btn" type="button" data-carousel-next aria-label="Next project">
+
+                    →
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Skills -->
+
+    <section id="skills">
+
+        <div class="section-title">
+
+            <span>$</span>
+
+            ./skills
+
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-box">
+
+                <h3>
+
+                    Languages
+
+                </h3>
+
+                <ul>
+
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+
+                </ul>
+
+            </div>
+
+            <div class="skill-box">
+
+                <h3>
+
+                    Concepts
+
+                </h3>
+
+                <ul>
+
+                    <li>Object-Oriented Programming</li>
+                    <li>Memory Management</li>
+                    <li>Data Structures</li>
+                    <li>Design Patterns</li>
+
+                </ul>
+
+            </div>
+
+            <div class="skill-box">
+
+                <h3>
+
+                    Technologies
+
+                </h3>
+
+                <ul>
+
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>SFML</li>
+                    <li>VS Code</li>
+
+                </ul>
+
+            </div>
+
+            <div class="skill-box">
+
+                <h3>
+
+                    Learning
+
+                </h3>
+
+                <ul>
+
+                    <li>Machine Learning</li>
+                    <li>AI Engineering</li>
+                    <li>LangGraph</li>
+                    <li>System Design</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Experience -->
+
+    <section id="experience">
+
+        <div class="section-title">
+
+            <span>$</span>
+
+            cat experience.log
+
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <h3>
+
+                    AI Engineer Intern
+
+                </h3>
+
+                <span>
+
+                    DecodeLabs
+
+                </span>
+
+                <p>
+
+                    Worked on AI workflows, prompt engineering,
+                    software automation and modern AI tools.
+
+                </p>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <h3>
+
+                    Programming Competition Officer
+
+                </h3>
+
+                <span>
+
+                    SOFTEC 2026
+
+                </span>
+
+                <p>
+
+                    Organized programming competitions and
+                    collaborated with university teams.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact">
+
+        <div class="section-title">
+
+            <span>$</span>
+
+            whoami --contact
+
+        </div>
+
+        <div class="contact-card">
+
+            <h2>
+
+                Open to Software Internships
+
+            </h2>
+
+            <p>
+
+                I'm always open to internships, collaborations,
+                open-source work and exciting software projects.
+
+            </p>
+
+            <div class="contact-links">
+
+                <a href="https://github.com/mubashirehsan10-bit/">
+
+                    GitHub
+
+                </a>
+
+                <a href="https://linkedin.com/in/mubashir-ehsan-a56b60378">
+
+                    LinkedIn 
+
+                </a>
+
+                <a href="mailto:mubashirehsan10@gmail.com">
+
+                    Email
+
+                </a>
+
+                <a href="tel:+923270581776">
+
+                    Phone
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>
+
+            $ exit
+
+        </p>
+
+        <p>
+
+            Thanks for visiting.
+
+            Built with HTML, CSS and JavaScript.
+
+        </p>
+
+        <p>
+
+            © 2025 Mubashir Ehsan
+
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
