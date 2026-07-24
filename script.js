@@ -4,6 +4,11 @@
 
 /* TERMINAL */
 
+const dot = document.getElementById('cursor-dot');
+window.addEventListener('mousemove', e => {
+  dot.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%)`;
+});
+
 const terminalLines = [
 
 "$ whoami",
