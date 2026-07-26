@@ -248,6 +248,38 @@ if (projectsCarousel) {
          carouselWheelLock = false;
       }, 650);
 
+      let touchStartX = 0;
+
+      let touchStartY = 0;
+
+      projectsCarousel.addEventListener("touchstart", event => {
+
+         touchStartX = event.touches[0].clientX;
+
+         touchStartY = event.touches[0].clientY;
+
+      }, { passive: true });
+
+      projectsCarousel.addEventListener("touchend", event => {
+
+         const touchEndX = event.changedTouches[0].clientX;
+
+         const touchEndY = event.changedTouches[0].clientY;
+
+         const diffX = touchStartX - touchEndX;
+
+         const diffY = touchStartY - touchEndY;
+
+         if (Math.abs(diffX) < 40 || Math.abs(diffX) < Math.abs(diffY)) {
+
+            return;
+
+         }
+
+         moveProjectCarousel(diffX > 0 ? 1 : -1);
+
+      }, { passive: true });
+
    }, { passive: false });
 
    window.addEventListener("keydown", event => {
