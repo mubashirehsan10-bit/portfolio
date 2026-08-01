@@ -24,6 +24,161 @@
 
 }
 
+.logo-background {
+
+   position: fixed;
+
+   inset: 0;
+
+   display: grid;
+
+   place-items: center;
+
+   pointer-events: none;
+
+   z-index: 0;
+
+   opacity: .98;
+
+   transform: translateY(-5vh) scale(.96);
+
+   mix-blend-mode: normal;
+
+}
+
+.logo-background svg {
+
+   width: min(44vw, 420px);
+
+   height: auto;
+
+   overflow: visible;
+
+   filter: none;
+
+}
+
+.logo-plate,
+.logo-boundary,
+.logo-mark,
+.logo-slash {
+
+   fill: none;
+
+   stroke-linecap: round;
+
+   stroke-linejoin: round;
+
+}
+
+.logo-plate {
+
+   fill: #ffffff;
+
+   stroke: none;
+
+   opacity: .98;
+
+}
+
+.logo-plate-right {
+
+   fill: url(#logoBlue);
+
+}
+
+.logo-boundary {
+
+   stroke: #f7fbff;
+
+   stroke-width: 10;
+
+   stroke-linecap: square;
+
+   stroke-linejoin: round;
+
+   filter: drop-shadow(0 0 6px rgba(255, 255, 255, .2));
+
+}
+
+.logo-mark-left,
+.logo-mark-right,
+.logo-slash {
+
+   stroke: #ffffff;
+
+   stroke-width: 10;
+
+   stroke-linecap: square;
+
+   stroke-linejoin: round;
+
+}
+
+.logo-mark-right {
+
+   stroke: #1b7cff;
+
+}
+
+.logo-slash {
+
+   stroke-width: 9;
+
+   filter: drop-shadow(0 0 4px rgba(255, 255, 255, .2));
+
+}
+
+.logo-background::after {
+
+   content: '';
+
+   position: absolute;
+
+   inset: 0;
+
+   pointer-events: none;
+
+   background: radial-gradient(circle at center, rgba(255, 255, 255, .02) 0%, rgba(255, 255, 255, 0) 56%);
+
+}
+
+body.loaded .logo-background {
+
+   animation: logoFadeIn .9s cubic-bezier(.2, .8, .2, 1) both;
+
+}
+
+@keyframes logoFadeIn {
+
+   from {
+
+      opacity: 0;
+
+      transform: translateY(-3vh) scale(.985);
+
+   }
+
+   to {
+
+      opacity: .98;
+
+      transform: translateY(-5vh) scale(.96);
+
+   }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+   body.loaded .logo-background {
+
+      animation: none;
+
+   }
+
+}
+
 
 body {
    cursor: none;
@@ -82,6 +237,8 @@ body {
 
    background: var(--bg);
 
+   position: relative;
+
    color: var(--text);
 
    overflow-x: hidden;
@@ -128,7 +285,7 @@ body::before {
 
    transform: scale(.86);
 
-   animation: auraBurst 2.45s cubic-bezier(.22, .76, .18, 1) forwards;
+   animation: none;
 
 }
 
@@ -148,7 +305,7 @@ body::after {
 
    filter: blur(1px);
 
-   animation: auraHalo 2.65s cubic-bezier(.22, .7, .2, 1) forwards;
+   animation: none;
 
 }
 
@@ -543,6 +700,8 @@ nav ul a.active {
 
    box-shadow: var(--shadow);
 
+   z-index: 5;
+
 }
 
 /* Hero */
@@ -564,6 +723,8 @@ nav ul a.active {
    max-width: var(--content-width);
 
    margin: 0 auto;
+
+   z-index: 2;
 
 }
 
