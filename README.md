@@ -39,18 +39,6 @@ portfolio/
 
 ---
 
-## 🚀 Getting Started
-
-No build step required — this is a static site.
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/mubashirehsan10-bit/portfolio.git
-   ```
-2. That's it — no dependencies to install.
-
----
-
 ## 📌 Sections
 
 | Section | Description |
