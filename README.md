@@ -4,7 +4,7 @@ A terminal-themed, premium developer portfolio built with vanilla HTML, CSS, and
 
 🔗 **Live Site:** [Add your deployed link here]
 
-![Portfolio Preview](1.0.png)
+![Portfolio Preview](Profile.png)
 
 ---
 
