@@ -2,7 +2,7 @@
 
 A terminal-themed, premium developer portfolio built with vanilla HTML, CSS, and JavaScript — no frameworks, no build tools, just clean handcrafted code.
 
-🔗 **Live Site:** [Add your deployed link here]
+🔗 **Live Site:** [(https://mubashirehsan10-bit.github.io/portfolio/)]
 ---
 
 ## ✨ Features
